@@ -1,0 +1,7 @@
+from models import User, Topic, Comment, Tag, TopicLikeDislike, CommentLikeDislike
+
+
+all_users = User.find_all()
+all_topics = Topic.find_all()
+all_comments = Comment.find_all()
+all_tags = Tag.find_all()

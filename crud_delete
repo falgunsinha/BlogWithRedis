@@ -1,0 +1,22 @@
+from models import User, Topic, Comment, Tag, TopicLikeDislike, CommentLikeDislike
+
+# Your other CRUD functions
+
+def delete_all_data():
+    User.delete_all_users()
+    Topic.delete_all_topics()
+    Comment.delete_all_comments()
+    Tag.delete_all_tags()
+
+    # If you want to delete likes/dislikes as well
+    # Specify the topic_id or comment_id you want to delete likes/dislikes for
+    # topic_id_to_delete_likes = "YOUR_TOPIC_ID"
+    # comment_id_to_delete_likes = "YOUR_COMMENT_ID"
+
+    # TopicLikeDislike.delete_all_likes_and_dislikes(topic_id_to_delete_likes)
+    # CommentLikeDislike.delete_all_comment_likes_and_dislikes(topic_id_to_delete_likes, comment_id_to_delete_likes)
+
+    TopicLikeDislike.drop_likes_dislikes_for_topics()
+    CommentLikeDislike.drop_likes_dislikes_for_comments()
+
+
