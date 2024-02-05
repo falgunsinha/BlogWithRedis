@@ -5,10 +5,10 @@
 Implement the database for the simple discussion forum for (users, topics, tags, comments, likes/dislikes) using Redis storage.
 Use other Redis data types than String.
 At a minimum, implement methods:
-list of all topics
-searching for posts by tags
-all topics by 1 user
-viewing the topic + comments (+ likes/dislikes)
-inserting a post/comment
-like/dislike a post or comment
-Min. requirement: comments can only be entered on posts (not on other comments).
+List of all topics.
+Searching for posts by tags.
+All topics by 1 user.
+Viewing the topic + comments (+ likes/dislikes).
+Inserting a post/comment.
+Like/dislike a post or comment.
+Min. requirement: comments to be entered on posts (may not on other comments).
