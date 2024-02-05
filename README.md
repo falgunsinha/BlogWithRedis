@@ -2,7 +2,7 @@
  Blog with Redis No SQL Database
 
 # Requirements
-Implement the database for the simple discussion forum from (users, topics, tags, comments, likes/dislikes) using Redis storage.
+Implement the database for the simple discussion forum for (users, topics, tags, comments, likes/dislikes) using Redis storage.
 Use other Redis data types than String.
 At a minimum, implement methods:
 list of all topics
